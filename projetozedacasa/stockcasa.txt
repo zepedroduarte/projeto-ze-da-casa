@@ -1,0 +1,28 @@
+Tipo de casa:1
+Dimensoes:1
+tipologia:1
+Casas de banho:1
+ano de construçao:1
+
+
+Tipo de casa:1
+Dimensoes:1
+tipologia:11
+Casas de banho:1
+ano de construçao:1
+
+
+Tipo de casa:
+Dimensoes:1
+tipologia:1
+Casas de banho:1
+ano de construçao:1
+
+
+Tipo de casa:11
+Dimensoes:1
+tipologia:11
+Casas de banho:1
+ano de construçao:1
+
+
