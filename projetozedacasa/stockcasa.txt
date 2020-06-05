@@ -26,3 +26,10 @@ Casas de banho:1
 ano de construçao:1
 
 
+Tipo de casa:as
+Dimensoes:6422248
+tipologia:6422476
+Casas de banho:1999490240
+ano de construçao:-1744279926
+
+

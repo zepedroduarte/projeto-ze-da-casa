@@ -19,6 +19,20 @@ int main()
      int adc;
     };
     struct casa c;
+    struct venda
+    {
+     char nome[30];
+     char email[40];
+     char morada[40];
+     int nif;
+     int tel;
+     char tdcs[20];
+     int dm;
+     int cb;
+     int tip;
+     int adct;
+    };
+    struct venda v;
     int  x,op,a,o,d,b,p,v,bg;
     textcolor(BLACK);
     system("color B");
@@ -181,7 +195,83 @@ int main()
 
        }
 
-      case 2:printf("a");  break;
+      case 2:system("cls");
+                     printf("|>-----------------------------------------------------<|\n");
+                     printf("|            Adicionar vendas|cliente                   |\n");
+                     printf("|>-----------------------------------------------------<|\n");
+                     printf("|>--<   Nome         -                              >--<|\n");
+                     printf("|-------------------------------------------------------|\n");
+                     printf("|>--<   Telemovel    -                              >--<|\n");
+                     printf("|>-----------------------------------------------------<|\n");
+                     printf("|>--<   Email        -                              >--<|\n");
+                     printf("|-------------------------------------------------------|\n");
+                     printf("|>--<   Morada       -                              >--<|\n");
+                     printf("|>-----------------------------------------------------<|\n");
+                     printf("|>--<   NIF          -                              >--<|\n");
+                     printf("| |----------------------------------------------------<|\n");
+                     gotoxy(25,4);
+                     fflush(stdin);
+                     gets(v.nome);
+                     gotoxy(25,6);
+                     fflush(stdin);
+                     scanf("%i",&v.tel);
+                     gotoxy(25,8);
+                     fflush(stdin);
+                     gets(v.email);
+                     gotoxy(25,10);
+                     fflush(stdin);
+                     gets(v.morada);
+                     gotoxy(25,12);
+                     fflush(stdin);
+                     scanf("%i",&v.nif);
+
+
+
+
+
+
+
+
+
+
+                     system("CLS");
+                     printf("|>-----------------------------------------<|\n");
+                     printf("|            Adicionar Venda|casa           |\n");
+                     printf("|-------------------------------------------|\n");
+                     printf("|>--< Tipo de casa      -               >--<|\n");
+                     printf("|>--<(apartamento ou vivenda)           >--<|\n");
+                     printf("|-------------------------------------------|\n");
+                     printf("|>--<   Dimensoes       -         |m^2  >--<|\n");
+                     printf("|-------------------------------------------|\n");
+                     printf("|>--<   tipologia       -T-             >--<|\n");
+                     printf("|-------------------------------------------|\n");
+                     printf("|>--< Casas de banho    -               >--<|\n");
+                     printf("|-------------------------------------------|\n");
+                     printf("|>--< ano de construçao -               >--<|\n");
+                     printf("|>-----------------------------------------<|\n");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       case 3:printf("a");  break;
 
       case 4: system("CLS");
@@ -202,7 +292,7 @@ int main()
               printf("|>-------------------------------------<|\n");
               printf("|          Colors                       |\n");
               printf("|---------------------------------------|\n");
-              printf("|>--< 1|BLACK | 4|CYAN   | 7|BROWN  >--<|\n");
+              printf("|>--< 1|BLACK | 4|CYAN   | 7|Gray   >--<|\n");
               printf("|---------------------------------------|\n");
               printf("|>--< 2|BLUE  | 5|RED    | 8|WHITE  >--<|\n");
               printf("|---------------------------------------|\n");
@@ -212,34 +302,26 @@ int main()
               scanf("%i",&bg);
               switch(bg)
               {
-               case 1:system(1F);
-                      textcolor(WHITE);
+               case 1:system("color 0F");
                       break;
-               case 2:system(BLUE);
-                      textcolor(WHITE);
+               case 2:system("color 1F");
                       break;
-               case 3:system(GREEN);
-                      textcolor(WHITE);
+               case 3:system("color 2F");
                       break;
-               case 4:system(CYAN);
-                      textcolor(WHITE);
+               case 4:system("color 3F");
                       break;
-               case 5:system(RED);
-                      textcolor(WHITE);
+               case 5:system("color 4F");
                       break;
-               case 6:system(MAGENTA);
-                      textcolor(WHITE);
+               case 6:system("color 5F");
                       break;
-               case 7:system(BROWN);
-                      textcolor(WHITE);
+               case 7:system("color 8F");
                       break;
-               case 8:system(WHITE);
-                      textcolor(WHITE);
+               case 8:system("color 7F");
+                      textcolor(BLACK);
                       break;
+
               }
               break;
-
-              switch(d)
               case 2:system("cls");
               printf("|>-------------------------------------<|\n");
               printf("|          Colors                       |\n");
