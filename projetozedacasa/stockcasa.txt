@@ -1,35 +1,7 @@
 Tipo de casa:1
-Dimensoes:1
-tipologia:1
-Casas de banho:1
-ano de construçao:1
-
-
-Tipo de casa:1
-Dimensoes:1
-tipologia:11
-Casas de banho:1
-ano de construçao:1
-
-
-Tipo de casa:
-Dimensoes:1
-tipologia:1
-Casas de banho:1
-ano de construçao:1
-
-
-Tipo de casa:11
-Dimensoes:1
-tipologia:11
-Casas de banho:1
-ano de construçao:1
-
-
-Tipo de casa:as
-Dimensoes:6422248
-tipologia:6422476
-Casas de banho:1999490240
-ano de construçao:-1744279926
+Dimensoes:4
+tipologia:4
+Casas de banho:4
+ano de construçao:44
 
 

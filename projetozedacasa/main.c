@@ -33,7 +33,7 @@ int main()
      int adct;
     };
     struct venda v;
-    int  x,op,a,o,d,b,p,v,bg;
+    int  x,op,a,o,d,b,p,bg,f,matriz[10][2],valor,nprazos,i,nmeses,j;
     textcolor(BLACK);
     system("color B");
     printf("       ) )        /\\\n");
@@ -125,7 +125,7 @@ int main()
     printf("|--------------------------------------------|\n");
     printf("|>--<      2-Vendas                      >--<|\n");
     printf("|--------------------------------------------|\n");
-    printf("|>--<      3-Economia                    >--<|\n");
+    printf("|>--<      3-Simulador Credito           >--<|\n");
     printf("|--------------------------------------------|\n");
     printf("|>--<      4-Setings                     >--<|\n");
     printf("|--------------------------------------------|\n");
@@ -191,11 +191,24 @@ int main()
                      fprintf(ficheiro,"ano de construçao:%i\n\n\n",c.adc);
                      fclose(ficheiro);
                      break;
-              case 2:system("stockcasa.txt");break;
+            case 2:system("stockcasa.txt");break;
+           };break;
 
-       }
-
-      case 2:system("cls");
+        case 2:system("CLS");
+             printf("|>------------------------------<|\n");
+             printf("|          VENDAS                |\n");
+             printf("|--------------------------------|\n");
+             printf("|>--<  1-Adicionar venda     >--<|\n");
+             printf("|--------------------------------|\n");
+             printf("|>--<  2-Editar/remover venda>--<|\n");
+             printf("|--------------------------------|\n");
+             printf("|>--<  3-voltar              >--<|\n");
+             printf("| |------------------------------|\n");
+             gotoxy(2,9);
+             scanf("%i",&f);
+              if(f==1)
+                {
+                 system("cls");
                      printf("|>-----------------------------------------------------<|\n");
                      printf("|            Adicionar vendas|cliente                   |\n");
                      printf("|>-----------------------------------------------------<|\n");
@@ -224,16 +237,6 @@ int main()
                      gotoxy(25,12);
                      fflush(stdin);
                      scanf("%i",&v.nif);
-
-
-
-
-
-
-
-
-
-
                      system("CLS");
                      printf("|>-----------------------------------------<|\n");
                      printf("|            Adicionar Venda|casa           |\n");
@@ -249,32 +252,91 @@ int main()
                      printf("|-------------------------------------------|\n");
                      printf("|>--< ano de construçao -               >--<|\n");
                      printf("|>-----------------------------------------<|\n");
+                     gotoxy(27,4);
+                     fflush(stdin);
+                     gets(v.tdcs);
+                     fflush(stdin);
+                     gotoxy(27,7);
+                     scanf("%i",&v.dm);
+                     fflush(stdin);
+                     gotoxy(29,9);
+                     scanf("%i",&v.tip);
+                     fflush(stdin);
+                     gotoxy(27,11);
+                     scanf("%i",&v.cb);
+                     fflush(stdin);
+                     gotoxy(27,13);
+                     scanf("%i",&v.adct);
+                     fflush(stdin);
+                     FILE*fiche;
+                     fiche=fopen("stockvenda.txt","a");
+                     fprintf(fiche,"Nome:%s\n",v.nome);
+                     fprintf(fiche,"Telemovel:%i\n",v.tel);
+                     fprintf(fiche,"email:%s\n",v.email);
+                     fprintf(fiche,"morada:%s\n",v.morada);
+                     fprintf(fiche,"Nif:%i\n\n\n",v.nif);
+                     fprintf(fiche,"Tipo de casa:%s\n",v.tdcs);
+                     fprintf(fiche,"Dimensoes:%i\n",v.dm);
+                     fprintf(fiche,"tipologia:%i\n",v.tip);
+                     fprintf(fiche,"Casas de banho:%i\n",v.cb);
+                     fprintf(fiche,"ano de construçao:%i\n\n\n",v.adct);
+                     fclose(fiche);
+                }
+              else if(f==2)
+              {
+               system("stockvenda.txt");
+              };break;
 
 
+      case 3:
+    system("CLS");
+
+    printf("Digite o valor da casa:\n");
+    scanf("%i",&valor);
+
+    printf("Digite quantos prazos deseja comparar:\n");
+    scanf("%i",&nprazos);
+
+    for(i=0;i<nprazos;i++)
+    {
+        system("CLS");
+        printf("|>--------------------<|\n");
+        printf("|>     Prazo %i        <|\n",i+1);
+        printf("|>--------------------<|\n");
+        printf("|>            |> Anos <|\n");
+        printf("|>--------------------<|\n");
+        gotoxy(4,4);
+        scanf("%i",&matriz[i][0]);
+    }
+
+    for(i=0;i<nprazos;i++)
+    {
+        nmeses = matriz[i][0] * 12;
+        matriz[i][1] = ((valor * 0.02) + valor) / nmeses; // 0.02 equivale a uma taxa de juros de 2% do valor da casa
+    }
+
+    system("CLS");
+    printf("|>--------------------------------------------<|\n");
+    printf("|>  Valor <||>     Prazo    <||> Mensalidade  <|\n");
+    printf("|>--------------------------------------------<|\n");
+
+    for(i=0;i<nprazos;i++)
+    {
+        printf("|>%8i<|",valor);
+
+        for(j=0;j<2;j++)
+        {
+        printf("|>%14i<|",matriz[i][j]);
+        }
+        printf("\n");
+
+    }
+    printf("|>--------------------------------------------<|\n");
+
+    system("PAUSE");break;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      case 3:printf("a");  break;
-
-      case 4: system("CLS");
+case 4: system("CLS");
               printf("|>-----------------------------<|\n");
               printf("|          Settings             |\n");
               printf("|-------------------------------|\n");
@@ -362,6 +424,7 @@ int main()
 
 
     case 5:system("CLS");
+           system("color 0F");
            textcolor(GREEN);
            printf("                                  ___     ___\n");
            printf("                                 (   )   (   )\n");
