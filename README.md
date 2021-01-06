@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido utilizando a seguinte tecnologia:
 
 ## 💻 Projeto
 
-A Zé da casa é um projeto destinado a empresas de gestão de vendas e com ele é possivel registar e visualizar vendas, adicionar, remover ou alterar stock existente.
+O programa zé da casa é um projeto destinado a empresas de gestão de vendas e com ele é possivel registar e visualizar vendas, adicionar, remover ou alterar stock existente.
 
 Este é um projeto desenvolvido para o projeto final do 1ºano de curso de Gestão e Programação de Sistemas Informáticos da **[Escola Digital](https://escoladigital.com/)**, que avalia os seguintes módulos:
 
