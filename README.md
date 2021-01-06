@@ -11,9 +11,7 @@
 
 <br>
 
-<p align="center">
-  <img alt="https://ireland.apollo.olxcdn.com/v1/files/9ktmasoz10rm3-PT/image;s=1000x700" width="60%">
-</p>
+
 
 ## 🚀 Tecnologias
 
