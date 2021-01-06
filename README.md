@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.archdaily.com.br%2Fbr%2F905726%2Fcasas-de-ferias-tinel-sodaarhitekti&psig=AOvVaw1sAoRhO8ctCr_tZNg2OVxG&ust=1610032506179000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjMlc7Mh-4CFQAAAAAdAAAAABAD" width="60%">
+  <img alt="https://images.adsttc.com/media/images/5bc6/2af3/f197/cc33/b700/0034/newsletter/Tinel_final-16.jpg?1539713731" width="60%">
 </p>
 
 ## 🚀 Tecnologias
