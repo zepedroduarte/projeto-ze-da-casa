@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="https://images.adsttc.com/media/images/5bc6/2af3/f197/cc33/b700/0034/newsletter/Tinel_final-16.jpg?1539713731" width="60%">
+  <img alt="https://ireland.apollo.olxcdn.com/v1/files/9ktmasoz10rm3-PT/image;s=1000x700" width="60%">
 </p>
 
 ## 🚀 Tecnologias
